@@ -65,3 +65,5 @@ function installFromURL() {
     })();
     a.j();
 ```
+
+## Stage 1 - The MSI package analysis
