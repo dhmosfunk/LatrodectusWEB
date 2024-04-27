@@ -6,7 +6,7 @@ Latrodectus malware analysis
 
 
 
-## Stage 0
+## Stage 0 - The JS analysis
 
 Stage 0 is appearing as an obfuscated JS file `<filename>.js` which contains the code that attempts to download an MSI package from a specified URL `http://45.95.11.217/ad.msi`. After downloading the MSI package, the JS file is using the `ActiveXObject` to iternact with Windows Installer and installs the product using the `InstallProduct()` method. 
 
