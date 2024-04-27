@@ -2,15 +2,15 @@
 Latrodectus malware analysis 
 
 ## Table of contents
-- [Stage 0 - The JS analysis](#stage-0---the-js-analysis)
-- [Stage 1 - The MSI package analysis](#stage-1---the-msi-package-analysis)
+- [Stage 0 - The JS](#stage-0---the-js)
+- [Stage 1 - The MSI package](#stage-1---the-msi-package)
 
 
 ## Intruduction
 
 
 
-## Stage 0 - The JS analysis
+## Stage 0 - The JS
 
 Stage 0 is appearing as an obfuscated JS file `<filename>.js` which contains the code that attempts to download an MSI package from a specified URL `http://45.95.11.217/ad.msi`. After downloading the MSI package, the JS file is using the `ActiveXObject` to iternact with Windows Installer and installs the product using the `InstallProduct()` method. 
 
@@ -70,4 +70,4 @@ function installFromURL() {
     a.j();
 ```
 
-## Stage 1 - The MSI package analysis
+## Stage 1 - The MSI package
