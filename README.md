@@ -72,4 +72,12 @@ function installFromURL() {
 ```
 
 ## Stage 1 - The MSI package
-An MSI package itself cannot be considered malicious because many products use it for their installation processes. However, in the exciting realm of malware analysis, we have to give it a chance to show its malicious side, RIGHT??? RIGHT... Let's dive in and see what mischief awaits!
+An MSI package itself cannot be considered malicious because many products use it for their installation processes. However, in the exciting realm of malware analysis, we have to give it a chance to show its malicious side, RIGHT??? RIGHT... Let's dive in and see what mischief awaits! 
+
+In order to analyze the MSI package we have to install a specific "unpacker" and see what the package contains. \
+
+I chose and install the [lessmsi](https://github.com/activescott/lessmsi) tool
+
+
+
+![](assets/msi/1.PNG)
