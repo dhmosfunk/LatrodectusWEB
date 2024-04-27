@@ -2,6 +2,7 @@
 Latrodectus malware analysis 
 
 ## Table of contents
+- [Intruduction](#intruduction)
 - [Stage 0 - The JS](#stage-0---the-js)
 - [Stage 1 - The MSI package](#stage-1---the-msi-package)
 
