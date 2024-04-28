@@ -90,7 +90,7 @@ A very interesting table is the `CustomAction`, where an actor can insert their 
 
 * `C:/Windows/System32/rundll32.exe [LocalAppDataFolder]sharepoint\360total.dll, homq`
 
-The above command is executing the DLL with the `homq` entry point, which will be executed.
+The above command is executing the DLL with the `homq` for entry point, which will be executed.
 
 
 Note that `rundll32.exe` is a legitimate executable that exists on Windows. However, like other similar executables, it can be used in a malicious manner. e.g. [LOLBAS Rundll32](https://lolbas-project.github.io/lolbas/Binaries/Rundll32/)
