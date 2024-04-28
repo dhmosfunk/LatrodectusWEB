@@ -96,3 +96,7 @@ The above command is executing the DLL with the `homq` entry point, which will b
 Note that `rundll32.exe` is a legitimate executable that exists on Windows. However, like other similar executables, it can be used in a malicious manner. e.g. [LOLBAS Rundll32](https://lolbas-project.github.io/lolbas/Binaries/Rundll32/)
 
 ![](assets/msi/3.PNG)
+
+Finally, it appears that the entire packaging process was carried out using Caphyon Advanced Installer.
+
+![](assets/msi/4.PNG)
