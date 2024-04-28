@@ -1,6 +1,8 @@
 ### ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
 
-<img src="assets/spider.png" width=350>
+<center>
+<img src="assets/spider.png" width=260>
+</center>
 
 ## Table of contents
 - [Intruduction](#intruduction)
