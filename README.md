@@ -81,5 +81,12 @@ Let's start by diving deep into the package extractions, where we can find that 
 
 Very interesting finding, BUT let's proceed with the package investigation and explore the tables.
 
-In the property table, we can find information regarding the package creator, such as the manufacturer, description, and product name. Based on the name `360total`, the entire setup seems to be an impersonation attempt of the 360 Total security solution AV.
+In the property table, we can find information regarding the package creator, such as the manufacturer, description, and product name. Based on the name `360 Total`, the entire setup seems to be an impersonation attempt of the 360 Total security solution AV.
+
 ![](assets/msi/2.PNG)
+
+
+A very interesting table is the `CustomAction`, where an actor can insert their own custom actions or commands into the package flow. Here, they could potentially execute the extracted `360total.dll`—which is likely malicious—.
+
+
+![](assets/msi/3.PNG)
