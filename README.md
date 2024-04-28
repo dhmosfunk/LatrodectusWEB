@@ -74,10 +74,12 @@ function installFromURL() {
 ## Stage 1 - The MSI package
 An MSI package itself cannot be considered malicious because many products use it for their installation processes. However, in the exciting realm of malware analysis, we have to give it a chance to show its malicious side, RIGHT??? RIGHT... Let's dive in and see what mischief awaits! 
 
-In order to analyze the MSI package we have to install a specific "unpacker" and see what the package contains. \
+In order to analyze the MSI package, we have to install a specific 'unpacker' and see what the package contains. I chose to use the [lessmsi](https://github.com/activescott/lessmsi) tool for this purpose.
 
-I chose and install the [lessmsi](https://github.com/activescott/lessmsi) tool
-
-
-
+Let's start by diving deep into the package extractions, where we can find that a suspicious DLL is being extracted from the package named `360total.dll`.
 ![](assets/msi/1.PNG)
+
+Very interesting finding, BUT let's proceed with the package investigation and explore the tables.
+
+In the property table, we can find information regarding the package creator, such as the manufacturer, description, and product name. Based on the name `360total`, the entire setup seems to be an impersonation attempt of the 360 Total security solution AV.
+![](assets/msi/2.PNG)
