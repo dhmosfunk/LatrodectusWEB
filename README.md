@@ -1,4 +1,4 @@
-## ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
+### ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
 
 ## Table of contents
 - [Intruduction](#intruduction)
