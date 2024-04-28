@@ -100,3 +100,5 @@ Note that `rundll32.exe` is a legitimate executable that exists on Windows. Howe
 Finally, it appears that the entire packaging process was carried out using Caphyon Advanced Installer.
 
 ![](assets/msi/4.PNG)
+
+## Stage 2 - The DLL
