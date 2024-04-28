@@ -88,5 +88,6 @@ In the property table, we can find information regarding the package creator, su
 
 A very interesting table is the `CustomAction`, where an actor can insert their own custom actions or commands into the package flow. Here, they could potentially execute the extracted `360total.dll`—which is likely malicious—.
 
+* `C:/Windows/System32/rundll32.exe [LocalAppDataFolder]sharepoint\360total.dll, homq`
 
 ![](assets/msi/3.PNG)
