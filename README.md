@@ -1,5 +1,7 @@
 ### ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
 
+<img src="assets/spider.png" width=350>
+
 ## Table of contents
 - [Intruduction](#intruduction)
 - [Stage 0 - The JS](#stage-0---the-js)
@@ -7,7 +9,6 @@
 
 
 ## Intruduction
-
 
 
 ## Stage 0 - The JS
