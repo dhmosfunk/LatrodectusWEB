@@ -1,4 +1,4 @@
-# LatrodectusWEB
+# ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries
 Latrodectus malware analysis 
 
 ## Table of contents
