@@ -122,10 +122,18 @@ The `homq` entry point seems very familiar, as we identified a rundll32.exe comm
 
 Alright, let's have a bit more fun and investigate the available section headers of the DLL. Among the 7 available section headers, the one that particularly intrigues me is `"yhDm^"`, which appears to be packed and likely encrypted. 
 
+Using strings at packed section we can see that the section is probably encrypted.
+
 ![](assets/360total/3.PNG)
 
 ### Unpacking the "yhDm^" section
 
-![](assets/360total/found_packed_thing.PNG)
+Now that we've discovered that the "yhDm^" section is packed and encrypted, let's open Ghidra and dive into some nasty code.
+
+Within the `entry()` function, there's a call to `FUN_180070044`, and the code exhibits various forms of obfuscation, such as variable reassignment and string concatenation. However, there's a specific section of code where the `DAT_180175000` is decrypted using XOR functionality. Before delving into that part, it's important to note that at the beginning of the mentioned function, there are some variables with unusual hexadecimal values, indicating possible obfuscation.
+
+![](assets/360total/4.PNG)
+
+
 
 ## Stage 3 - Another DLL
