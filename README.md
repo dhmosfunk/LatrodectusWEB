@@ -134,8 +134,12 @@ Within the `entry()` function, there's a call to `FUN_180070044`, and the code e
 
 ![](assets/360total/4.PNG)
 
-In the following image, we can observe that `DAT_180175000` corresponds to the packed section `"yhDm^"`. The code loads the encrypted data from this specific data block and decrypts it using XOR. Since the data is encrypted we have to decrypt the specific data block the key that encrypts the data.
+In the following image, we can observe that `DAT_180175000` corresponds to the packed section `"yhDm^"`. The code loads the encrypted data from this specific data block and decrypts it using XOR. Since the data is encrypted we have to decrypt the specific data block with the key that encrypts the data.
 
 ![](assets/360total/5.PNG)
+
+After saving the encrypted block to a file in hexadecimal format, it's time for the CyberChef playground. Decoding the hex data reveals the absence of an MZ string at the beginning, indicating it's not a `DOS MZ executable`. However, at the end of the data, there's a strange repetitive string, `S5XlpOdyMN(U)RxRw`, which serves as the actual XOR key. This occurs because when XORing something containing NULL bytes, the XOR key is displayed instead.
+
+![](assets/360total/6.PNG)
 
 ## Stage 3 - Another DLL
