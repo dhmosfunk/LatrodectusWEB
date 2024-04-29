@@ -6,6 +6,7 @@
 - [Intruduction](#intruduction)
 - [Stage 0 - The JS](#stage-0---the-js)
 - [Stage 1 - The MSI package](#stage-1---the-msi-package)
+- [Stage 2 - The DLL](#stage-2---the-dll)
     - [Unpacking the "yhDm^" section](#unpacking-the-yhdm-section)
 - [Stage 3 - Another DLL](#stage-3---another-dll)
 
