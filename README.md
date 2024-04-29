@@ -142,7 +142,7 @@ After saving the encrypted block to a file in hexadecimal format, it's time for 
 
 ![](assets/360total/6.PNG)
 
-Its time for MZ... Using the XOR key we can decrypt the file and save it to a file.
+**ITS TIME FOR MZ!** Using the XOR key, we can decrypt the data, save it, and start investigating the new findings.
 
 ![](assets/360total/7.PNG)
 
