@@ -74,9 +74,6 @@ function installFromURL() {
     a.j();
 ```
 
-### IOC
-`http[:]//45.95.11.217/ad[.]msi`
-
 ## Stage 1 - The MSI package
 An MSI package itself cannot be considered malicious because many products use it for their installation processes. However, in the exciting realm of malware analysis, we have to give it a chance to show its malicious side, RIGHT??? RIGHT... Let's dive in and see what mischief awaits! 
 
