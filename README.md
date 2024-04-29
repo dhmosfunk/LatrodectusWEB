@@ -120,11 +120,12 @@ The `homq` entry point seems very familiar, as we identified a rundll32.exe comm
 
 ![](assets/360total/2.PNG)
 
-Alright, let's have a bit more fun and investigate the available section headers of the DLL. There are 7 available section headers but the only one that intrigues me is the `"yhDm^"` which is with packed status and probably encypted.
+Alright, let's have a bit more fun and investigate the available section headers of the DLL. Among the 7 available section headers, the one that particularly intrigues me is `"yhDm^"`, which appears to be packed and likely encrypted. 
 
 ![](assets/360total/3.PNG)
 
 ### Unpacking the "yhDm^" section
 
+![](assets/360total/found_packed_thing.PNG)
 
 ## Stage 3 - Another DLL
