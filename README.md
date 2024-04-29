@@ -168,6 +168,6 @@ The same entry points can be found when the DLL is decompiled, possibly because 
 
 ![](assets/unpackedll/4.PNG)
 
-The `DECRYPT_DATA` function is called whithin function `FUN_180003868` with `DAT_18000fa00` data block as parameter meaning that the data on the specified block are encrypted. At listing menu we can observe that contains a lot of data blocks `DAT_*` with encrypted data starting from `18000f000` -until- `` 
+The `DECRYPT_DATA` function is called within the `FUN_180003868` function, with the `DAT_18000fa00` data block as a parameter, indicating that the data in this block are encrypted. In the listing menu, we can observe numerous data blocks `(DAT_*)` containing encrypted data, ranging from `180010467` to `18000f000`.
 
 ![](assets/unpackedll/5.PNG)
