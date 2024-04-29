@@ -147,3 +147,15 @@ After saving the encrypted block to a file in hexadecimal format, it's time for 
 ![](assets/360total/7.PNG)
 
 ## Stage 3 - Another DLL
+
+**REPEAT THE SAME STEPS!** Our new journey starts by opening the unpacked file with the `DIE` tool and beginning our investigation. Interestingly, the file yields the same results as the first DLL: `Linker: Microsoft Linker(14.0, Visual Studio 2015 14.0*)[DLL]`.
+
+![](assets/unpackedll/1.PNG)
+
+Same results, but even juicier DLL entry points! This DLL contains four specific entry points, and it appears that each entry point exhibits different behavior. The available entry points are:
+- extra
+- follower
+- run
+- scub
+
+![](assets/unpackedll/2.PNG)
