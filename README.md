@@ -142,4 +142,8 @@ After saving the encrypted block to a file in hexadecimal format, it's time for 
 
 ![](assets/360total/6.PNG)
 
+Its time for MZ... Using the XOR key we can decrypt the file and save it to a file.
+
+![](assets/360total/7.PNG)
+
 ## Stage 3 - Another DLL
