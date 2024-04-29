@@ -102,3 +102,12 @@ Finally, it appears that the entire packaging process was carried out using Caph
 ![](assets/msi/4.PNG)
 
 ## Stage 2 - The DLL
+
+Let's proceed by extracting `360total.dll` and begin analyzing it. We'll open it using the `Detected It Easy` tool, which is already installed on FlareVM.
+
+![](assets/360total/1.PNG)
+
+### Unpacking the "yhDm^" section
+
+
+## Stage 3 - Another DLL
