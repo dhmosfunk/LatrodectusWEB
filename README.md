@@ -106,9 +106,23 @@ Finally, it appears that the entire packaging process was carried out using Caph
 
 ## Stage 2 - The DLL
 
-Let's proceed by extracting `360total.dll` and begin analyzing it. We'll open it using the `Detected It Easy` tool, which is already installed on FlareVM.
+Let's proceed by extracting `360total.dll` and begin analyzing it. We'll open it using the `Detected It Easy` tool, which is already installed on FlareVM. \
+Based on the `DIE` tool results we can clearly see that our file is a `Linker: Microsoft Linker(14.0, Visual Studio 2015 14.0*)[DLL]`.
 
 ![](assets/360total/1.PNG)
+
+Further exploring `DIE` features, we can uncover the DLL exports, which essentially are the available entry points, or functions, that can be utilized during execution. The available entry points are:
+- homq
+- CreateObject
+- RegisterInstallTime
+
+The `homq` entry point seems very familiar, as we identified a rundll32.exe command executed within the MSI Installer.
+
+![](assets/360total/2.PNG)
+
+Alright, let's have a bit more fun and investigate the available section headers of the DLL. There are 7 available section headers but the only one that intrigues me is the `"yhDm^"` which is with packed status and probably encypted.
+
+![](assets/360total/3.PNG)
 
 ### Unpacking the "yhDm^" section
 
