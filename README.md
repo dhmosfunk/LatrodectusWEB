@@ -159,3 +159,7 @@ Same results, but even juicier DLL entry points! This DLL contains four specific
 - scub
 
 ![](assets/unpackedll/2.PNG)
+
+The same entry points can be found when the DLL is decompiled, possibly because the malware author forgot to delete their comments.
+
+![](assets/unpackedll/3.PNG)
