@@ -167,3 +167,7 @@ The same entry points can be found when the DLL is decompiled, possibly because 
 **MORE DIGGING!** As we delve into the decompiled code, we uncover another XOR functionality following the same pattern as the first one we found. It decrypts data, presumably for use in malicious actions by the malware.
 
 ![](assets/unpackedll/4.PNG)
+
+The `DECRYPT_DATA` function is called whithin function `FUN_180003868` with `DAT_18000fa00` data block as parameter meaning that the data on the specified block are encrypted. At listing menu we can observe that contains a lot of data blocks `DAT_*` with encrypted data starting from `18000f000` -until- `` 
+
+![](assets/unpackedll/5.PNG)
