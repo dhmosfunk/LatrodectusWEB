@@ -163,3 +163,7 @@ Same results, but even juicier DLL entry points! This DLL contains four specific
 The same entry points can be found when the DLL is decompiled, possibly because the malware author forgot to delete their comments.
 
 ![](assets/unpackedll/3.PNG)
+
+**MORE DIGGING!** As we delve into the decompiled code, we uncover another XOR functionality following the same pattern as the first one we found. It decrypts data, presumably for use in malicious actions by the malware.
+
+![](assets/unpackedll/4.PNG)
