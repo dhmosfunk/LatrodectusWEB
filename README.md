@@ -10,6 +10,7 @@
     - [Unpacking the "yhDm^" section](#unpacking-the-yhdm-section)
 - [Stage 3 - Another DLL](#stage-3---another-dll)
 - [Stage N - Final thoughts](#stage-n---final-thoughts)
+- [IOC](#ioc)
 
 ## Intruduction
 Welcome to **ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries**. The idea for this analysis originated from my experience with a forensic challenge on the `Swiss Hacking Challenge (SHC)` CTF. This challenge encompassed investigation, reverse engineering, cryptography, web exploitation, and obtaining access to the Command and Control (C2) interface – essentially, it was a malware analysis challenge.
