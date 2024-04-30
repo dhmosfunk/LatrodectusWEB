@@ -190,4 +190,9 @@ The commands, strings, paths, HTTP parameters, and so forth mentioned above are 
 - wmic.exe /node:localhost /namespace:\\root\SecurityCenter2 path AntiVirusProduct Get DisplayName | findstr /V /B /C:displayName || echo No Antivirus installed
 - -snip-
 
-    
+Noteworthy is the discovery of the sample campaign ID and campaign name, as outlined by Proofpoint researchers in their analysis [here](https://www.proofpoint.com/us/blog/threat-insight/latrodectus-spider-bytes-ice). The campaign ID and campaign name, as mentioned in the Proofpoint analysis, can prove invaluable for tracking the threat actors.
+
+- Campaign ID: 3828029093
+- Campaign Name: Facial
+
+![](assets/unpackedll/6.PNG)
