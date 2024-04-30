@@ -17,7 +17,7 @@ Welcome to **ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive i
 
 Upon completing this challenge, I found myself contemplating: what if I were to obtain a random malware sample from Malware Bazaar and explore it further? This curiosity led me to download a random sample, and to my surprise, it turned out to be a Latrodectus one.
 
-Starting the investigation into a real sample, I faced numerous challenges and dead ends due to my lack of experience with such sophisticated malware. However, I was fortunate to have the support of my friends, [c8c4r1](https://twitter.com/Generic_Alias90), [avpxyyf](github.com/avpxyyf), and [fr0z830](#), who guided me through this journey. Without their invaluable assistance, this analysis would not have been possible. 
+Starting the investigation into a real sample, I faced numerous challenges and dead ends due to my lack of experience with such sophisticated malware. However, I was fortunate to have the support of my friends, [c8c4r1](https://twitter.com/Generic_Alias90), [avpxyyf](https://github.com/avpxyyf), and [fr0z830](#), who guided me through this journey. Without their invaluable assistance, this analysis would not have been possible. 
 
 **Ahoy! This analysis was a blast, a team effort fueled by friendship and late-night shenanigans. We turned our chill session into a malware mystery-solving extravaganza!**
 
