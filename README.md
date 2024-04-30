@@ -205,6 +205,17 @@ Noteworthy is the discovery of the sample campaign ID and campaign name, as outl
 
 You can find some dynamic analysis images in the `dynamic` folder within the repository files.
 
+
+## IOC
+
+https[:]//jarinamaers[.]shop/live/ \
+https[://]wrankaget[.]site/live/ \
+.js 156c0afc01a5e346b95ebdb60cea9b7046ad7a61199cd63d6ad0f4ae32a576ac \
+.msi 8041a15e27c785f2adcce9e8c643f5cc619b52e50cd36ff043d13c4089ce1cad \
+.dll 1625ac230aa5ca950573f3ba0b1a7bd4c7fbd3e3686f9ecd4a40f1504bf33a11 \
+unpacked.dll a1e13e8222e0028a64972eb9dcc91f7c8e3f9b7ae49d84dc5029274c1c62e927 \
+update_data.dat 
+
 ## Stage N - Final thoughts
 
 As I stand at the crossroads of this exhilarating journey through ArachnoAnalysis: Spinning Webs with Latrodectus, I can't help but marvel at the whirlwind of excitement and discovery that has unfolded before me. It's been a wild ride, filled with twists, turns, and more than a few "aha" moments. But you know what? I'm not ready to hang up my detective hat just yet. Oh no, not when there's still so much left to uncover in our trusty ol' Latrodectus sample.
