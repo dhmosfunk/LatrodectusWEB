@@ -12,7 +12,13 @@
 - [Stage N - Final thoughts](#stage-n---final-thoughts)
 
 ## Intruduction
+Welcome to **ArachnoAnalysis: Spinning Webs with Latrodectus - A Novice's Dive into Malware Mysteries**. The idea for this analysis originated from my experience with a forensic challenge on the `Swiss Hacking Challenge (SHC)` CTF. This challenge encompassed investigation, reverse engineering, cryptography, web exploitation, and obtaining access to the Command and Control (C2) interface – essentially, it was a malware analysis challenge.
 
+Upon completing this challenge, I found myself contemplating: what if I were to obtain a random malware sample from Malware Bazaar and explore it further? This curiosity led me to download a random sample, and to my surprise, it turned out to be a Latrodectus one.
+
+Starting the investigation into a real sample, I faced numerous challenges and dead ends due to my lack of experience with such sophisticated malware. However, I was fortunate to have the support of my friends, [Konstantinos Kanakis](https://twitter.com/Generic_Alias90), avpxyyf, and fr0z830, who guided me through this journey. Without their invaluable assistance, this analysis would not have been possible. 
+
+**Ahoy! This analysis was a blast, a team effort fueled by friendship and late-night shenanigans. We turned our chill session into a malware mystery-solving extravaganza!**
 
 ## Stage 0 - The JS
 
@@ -200,3 +206,9 @@ Noteworthy is the discovery of the sample campaign ID and campaign name, as outl
 You can find some dynamic analysis images in the `dynamic` folder within the repository files.
 
 ## Stage N - Final thoughts
+
+As I stand at the crossroads of this exhilarating journey through ArachnoAnalysis: Spinning Webs with Latrodectus, I can't help but marvel at the whirlwind of excitement and discovery that has unfolded before me. It's been a wild ride, filled with twists, turns, and more than a few "aha" moments. But you know what? I'm not ready to hang up my detective hat just yet. Oh no, not when there's still so much left to uncover in our trusty ol' Latrodectus sample.
+
+And hey, let's not forget the best part: this whole adventure has been an absolute blast! Who knew that diving headfirst into malware mysteries could be so darn fun? Certainly not me, but hey, I'm not complaining. It's been a journey of firsts, and I've loved every minute of it.
+
+So here's to the next chapter, the next challenge, and the next round of "what the heck does this do?" moments. Bring it on, Latrodectus, because I'm ready for whatever you've got in store!
