@@ -197,4 +197,6 @@ Noteworthy is the discovery of the sample campaign ID and campaign name, as outl
 
 ![](assets/unpackedll/6.PNG)
 
+You can find some dynamic analysis images in the `dynamic` folder within the repository files.
+
 ## Stage N - Final thoughts
