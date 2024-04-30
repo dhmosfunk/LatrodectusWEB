@@ -301,4 +301,20 @@ Startup
 Personal
 Local AppData
 </pre>
-<details>
+</details>
+
+The commands, strings, paths, HTTP parameters, and so forth mentioned above are decrypted during the DLL's execution flow to enable their utilization in the malware's operations.
+
+- ipconfig /all
+- systeminfo
+- nltest /domain_trusts
+- net view /all /domain
+- nltest /domain_trusts /all_trusts
+- net view /all
+- net group "Domain Admins" /domain
+- /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntiVirusProduct Get * /Format:List
+- net config workstation
+- wmic.exe /node:localhost /namespace:\\root\SecurityCenter2 path AntiVirusProduct Get DisplayName | findstr /V /B /C:displayName || echo No Antivirus installed
+- -snip-
+
+    
