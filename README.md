@@ -127,7 +127,7 @@ The `homq` entry point seems very familiar, as we identified a rundll32.exe comm
 
 ![](assets/360total/2.PNG)
 
-Alright, let's have a bit more fun and investigate the available section headers of the DLL. Among the 7 available section headers, the one that particularly intrigues me is `"yhDm^"`, which appears to be packed and likely encrypted. 
+Alright, let's have a bit more fun and investigate the available section headers of the DLL. Among the 7 available section headers, the one that particularly intrigues me is `"yhDm^"`, likely due to its high entropy, suggesting it's packed and possibly encrypted. 
 
 Using strings at packed section we can see that the section is probably encrypted.
 
@@ -181,7 +181,7 @@ The `DECRYPT_DATA` function is called within the `FUN_180003868` function, with 
 
 However, we can delve deeper by searching for reference calls to the `DECRYPT_DATA` function. Let's decrypt some data by extracting the encrypted data within the specified range and using the author's XOR code for decryption.
 
-The decrypted data can be found at repository files, `decrypted_data.txt`.
+The `decrypted data`, along with the `decryptor.js` script, is available in the repository files, courtesy of avpxyyf.
 
 The commands, strings, paths, HTTP parameters, and so forth mentioned above are decrypted during the DLL's execution flow to enable their utilization in the malware's operations.
 
