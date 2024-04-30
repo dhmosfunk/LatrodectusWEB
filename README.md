@@ -9,7 +9,7 @@
 - [Stage 2 - The DLL](#stage-2---the-dll)
     - [Unpacking the "yhDm^" section](#unpacking-the-yhdm-section)
 - [Stage 3 - Another DLL](#stage-3---another-dll)
-
+- [Stage N - Final thoughts](#)
 
 ## Intruduction
 
@@ -196,3 +196,5 @@ Noteworthy is the discovery of the sample campaign ID and campaign name, as outl
 - Campaign Name: **Facial**
 
 ![](assets/unpackedll/6.PNG)
+
+## Stage N - Final thoughts
