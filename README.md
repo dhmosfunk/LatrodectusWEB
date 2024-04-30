@@ -174,8 +174,9 @@ The `DECRYPT_DATA` function is called within the `FUN_180003868` function, with 
 
 However, we can delve deeper by searching for reference calls to the `DECRYPT_DATA` function. Let's decrypt some data by extracting the encrypted data within the specified range and using the author's XOR code for decryption.
 
-```
-
+<details>
+<summary>Decrypted Data</summary>
+<pre>
 /c ipconfig /all
 C:\Windows\System32\cmd.exe
 /c systeminfo
@@ -269,8 +270,8 @@ counter=%d&type=%d&guid=%s&os=%d&arch=%d&username=%s&group=%lu&ver=%d.%d&up=%d&d
 C:\WINDOWS\SYSTEM32\rundll32.exe %s,%s
 C:\WINDOWS\SYSTEM32\rundll32.exe %s
 Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Tob 1.1)
-<html>
-<!DOCTYPE
+!html>
+!DOCTYPE
 %s%d.dll
 12345
 &stiller=
@@ -299,4 +300,5 @@ Desktop
 Startup
 Personal
 Local AppData
-```
+</pre>
+<details>
