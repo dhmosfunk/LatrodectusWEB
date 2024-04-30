@@ -293,8 +293,8 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 %04X%04X%04X%04X%08X%04X
 %04X%04X%04X%04X%08X%04X
 \Registry\Machine\
-https://jarinamaers.shop/live/
-https://wrankaget.site/live/
+https[:]//jarinamaers[.]shop/live/
+https[://]wrankaget[.]site/live/
 AppData
 Desktop
 Startup
