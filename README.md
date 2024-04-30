@@ -192,7 +192,7 @@ The commands, strings, paths, HTTP parameters, and so forth mentioned above are 
 
 Noteworthy is the discovery of the sample campaign ID and campaign name, as outlined by Proofpoint researchers in their analysis [here](https://www.proofpoint.com/us/blog/threat-insight/latrodectus-spider-bytes-ice). The campaign ID and campaign name, as mentioned in the Proofpoint analysis, can prove invaluable for tracking the threat actors.
 
-- Campaign ID: 3828029093
-- Campaign Name: Facial
+- Campaign ID: **3828029093**
+- Campaign Name: **Facial**
 
 ![](assets/unpackedll/6.PNG)
