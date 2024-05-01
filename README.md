@@ -9,7 +9,7 @@
 - [Stage 2 - The DLL](#stage-2---the-dll)
     - [Unpacking the "yhDm^" section](#unpacking-the-yhdm-section)
 - [Stage 3 - Another DLL](#stage-3---another-dll)
-    - [Decrypting C2 Traffic](#unpacking-the-yhdm-section)
+    - [Decrypting C2 Traffic](#decrypting-c2-traffic)
 - [Stage N - Final thoughts](#stage-n---final-thoughts)
 - [IOC](#ioc)
 
