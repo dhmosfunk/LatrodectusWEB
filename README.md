@@ -213,11 +213,11 @@ You can find some dynamic analysis images in the `dynamic` folder within the rep
 
 After the restart, the scheduled task will execute, initiating the first request towards the C2 server `grizmotras.com`.
 
-![](assets/traffic_dec/1.PNG)
+![](assets/traffic_dec/1.png)
 
 Let's proceed by opening and extracting the first POST request. And there it is! base64-encoded data. The data is encrypted with `RC4`, as mentioned by Proofpoint analysis. However, it is not encrypted with the `12345` key for decryption; instead, it is encrypted with the key `eNIHaXC815vAqddR21qsuD35eJFL7CnSOLI9vUBdcb5RPcS0h6`, which can be found in `decrypted_data.txt`.
 
-![](assets/traffic_dec/2.PNG)
+![](assets/traffic_dec/2.png)
 
 ```
 YjOeEyiMk3RrE5vcC/HWCbEd2NSiC0Jmlx62htLTKmiBV8iH7SdWtaT67MMI6nGhcZiBWLUUfs9FloPMfPu+9sL8KXzJchOQzDFsA1DtTXNivaoRuEUHEQwcwROaqBBsXYCssNv8AXXVOVXoMue4BHa09V9+9KX86r6yelVLzzEuoUHYEHndRII4kEQD1A+YlbiopJTN3bpaQp9wwZbk3sf/qY4M2Pmi15DTROC+Del2WpTMMYfdVRQMGsWAabn9Vmj6zUuxQ6SFvYOgLbviFDl2wOGQNrc=
