@@ -9,6 +9,7 @@
 - [Stage 2 - The DLL](#stage-2---the-dll)
     - [Unpacking the "yhDm^" section](#unpacking-the-yhdm-section)
 - [Stage 3 - Another DLL](#stage-3---another-dll)
+    - [Decrypting C2 Traffic](#unpacking-the-yhdm-section)
 - [Stage N - Final thoughts](#stage-n---final-thoughts)
 - [IOC](#ioc)
 
@@ -205,6 +206,43 @@ Noteworthy is the discovery of the sample campaign ID and campaign name, as outl
 ![](assets/unpackedll/6.PNG)
 
 You can find some dynamic analysis images in the `dynamic` folder within the repository files.
+
+### Decrypting C2 Traffic
+
+**UPDATE!** Since the malware communication is TLS encrypted, we have to decrypt it in order to see what's happening behind the maths(cryto). So the process is simple: let's install the  [mitmproxy](https://mitmproxy.org/) tool, import the proper certifications, and then restart the VM in order to apply the changes. 
+
+After the restart, the scheduled task will execute, initiating the first request towards the C2 server `grizmotras.com`.
+
+![](assets/traffic_dec/1.PNG)
+
+Let's proceed by opening and extracting the first POST request. And there it is! base64-encoded data. The data is encrypted with `RC4`, as mentioned by Proofpoint analysis. However, it is not encrypted with the `12345` key for decryption; instead, it is encrypted with the key `eNIHaXC815vAqddR21qsuD35eJFL7CnSOLI9vUBdcb5RPcS0h6`, which can be found in `decrypted_data.txt`.
+
+![](assets/traffic_dec/2.PNG)
+
+```
+YjOeEyiMk3RrE5vcC/HWCbEd2NSiC0Jmlx62htLTKmiBV8iH7SdWtaT67MMI6nGhcZiBWLUUfs9FloPMfPu+9sL8KXzJchOQzDFsA1DtTXNivaoRuEUHEQwcwROaqBBsXYCssNv8AXXVOVXoMue4BHa09V9+9KX86r6yelVLzzEuoUHYEHndRII4kEQD1A+YlbiopJTN3bpaQp9wwZbk3sf/qY4M2Pmi15DTROC+Del2WpTMMYfdVRQMGsWAabn9Vmj6zUuxQ6SFvYOgLbviFDl2wOGQNrc=
+```
+
+By applying the `From Base64` -> `RC4` recipe in CyberChef and providing the encryption key, the following data will appear:
+
+```
+counter=0
+&type=1
+&guid=416A4D4BE980D5D19DF9A561ED09
+&os=6
+&arch=1
+&username=FlareVM
+&group=3828029093
+&ver=1.2
+&up=9
+&direction=grizmotras.com
+&mac=00:0c:29:60:6e:16;;00:ff:dd:a9:8d:ab;;
+&computername=DESKTOP-J6MJG2Q&domain=-
+```
+
+Finally, upon analyzing the requests reveals a consistent pattern: each request is made roughly every 10 minutes. This is directly tied to the implementation of a persistence method, which executes every 10 minutes.
+
+![](dynamic/9.PNG)
 
 
 ## IOC
