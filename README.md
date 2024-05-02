@@ -240,6 +240,16 @@ counter=0
 &computername=DESKTOP-J6MJG2Q&domain=-
 ```
 
+```
+QhCuPA68swVWP7r3N8eXCOsS2cm2RUx4jjjwq5z8ACXLBv+cynkC3o6q25MR1j6wE+30S/dVIJ1QlJOebuXz7Nr6M3fNZVja7z9+GEHeLzlsuaBLxXI=
+```
+
+```
+CLEARURL
+URLS|0|https://grizmotras.com/live/
+URLS|1|https://kokcheez.website/live/
+```
+
 Finally, upon analyzing the requests reveals a consistent pattern: each request is made roughly every 10 minutes. This is directly tied to the implementation of a persistence method, which executes every 10 minutes.
 
 ![](dynamic/9.PNG)
@@ -250,6 +260,7 @@ Finally, upon analyzing the requests reveals a consistent pattern: each request 
 https[:]//jarinamaers[.]shop/live/ \
 https[://]wrankaget[.]site/live/ \
 https[://]grizmotras.com/live\ \
+https[://]kokcheez.website/live/
 .js 156c0afc01a5e346b95ebdb60cea9b7046ad7a61199cd63d6ad0f4ae32a576ac \
 .msi 8041a15e27c785f2adcce9e8c643f5cc619b52e50cd36ff043d13c4089ce1cad \
 .dll 1625ac230aa5ca950573f3ba0b1a7bd4c7fbd3e3686f9ecd4a40f1504bf33a11 \
