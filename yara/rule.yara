@@ -2,7 +2,7 @@ rule isLatrodectus{
 
     meta:
         author = "dhmosfunk"
-        reference = "https://github.com/dhmosfunk/LatrodectusWEB
+        reference = "https://github.com/dhmosfunk/LatrodectusWEB"
 
     strings:
         $rundll32_cmd = "C:/Windows/System32/rundll32.exe [LocalAppDataFolder]sharepoint"
